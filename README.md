@@ -80,3 +80,11 @@ PostgreSQL's versatility makes it highly suitable for many different sized proje
 
 ### CONS:
 
+1. LEARNING CURVE: PostgreSQL due to its large feature set and indepth/complex syntax can prove quite the steep learning curve for developers that are unfamilliar with relational databases, which can have a significant impact of development time.
+
+2. SETUP AND MAINENANCE: The setup and configuration process for postgreSQL requires knowledge and time, especially if the developer wants the best performance possible from the application. The maintenance with postgres can also add a fair bit of time to a project due to requiring data backups, tuning of the performance of the program and then of course updating the secruity management of the application all of which can contribute to time to deliver/deploy/maintain. 
+
+3. INITIAL SETUP OF SCHEMA'S DATABASE: Properly setting up all of the requirements for the database to meet the spicific needs of the API project can also take a large amount of time due to needing to follow to structure of creations for schemas/tables and indexes/permissions. 
+
+4. RESOURCE CONSUMPTION: Postgres can be highly resource consumptive due to  it's abillity to handle large numbers of API requests (if required). So properly using and allocating resources becomes paramount in preventing performance losses or better known "bottle necks" in performance.
+So depending on the workload the requirements of not only hardware but software management is highly important for postgres to work efficiently. 
