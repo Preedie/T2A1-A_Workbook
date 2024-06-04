@@ -88,3 +88,71 @@ PostgreSQL's versatility makes it highly suitable for many different sized proje
 
 4. RESOURCE CONSUMPTION: Postgres can be highly resource consumptive due to  it's abillity to handle large numbers of API requests (if required). So properly using and allocating resources becomes paramount in preventing performance losses or better known "bottle necks" in performance.
 So depending on the workload the requirements of not only hardware but software management is highly important for postgres to work efficiently. 
+
+## Q3
+
+Daily stand-ups are one of the many agile management methodolgies implemented when undertaking a API project.
+
+The general structure of a daily stand-up is as follows.
+- questions are asked
+1. What did you do yesterday?
+2. what will you do today?
+3. Is there anything blocking your progress?
+- The standup is usually only for 10 people max as having to many people in the meeting cna make it go alot longer than it should aswell as making the meeting less transparent as team member will begin to lose the motivation to be more questioning and open with a large amoutn of spectators.
+- The standup is often reserved to be a maximum of 10 minutes long.
+
+The standup meeting is largely structured around the 3 questions what did you do yesterday, what will you do today and is anything blocking your progress. Which not everyone is required to, but notes can be taken as it is considered quite beneficial to do so.
+
+The main priniciples in daily standup meetings is simple
+1. Keep them short (10mins)
+2. Use the same questions every single meeting.
+3. Conduct the meetings everyday and at the same time.
+
+- The meeting can often kickoff with a round robin where each tem member answers the three questions.
+
+- If there are blockers indetified in question 3 they are addressed and written down so that they can be pursued further AFTER the standup meeting by the proper team members(team managers/stake holders/project manager).
+
+- The meeting is to remain positive and constructive, essentially the enviroment should be encouraging so that the fear of judgement doesnt sway team memmbers from expressing their ideas about any challenges.
+
+- The standup meeting should regularly be reviewed to ensure its effecitive and doing the job it is supposed to, and if it is not it goes under review and is adjusted to make sure it meets proper standards.
+
+The typical patricipants for daily standup meetings are fairly straight forward but not limited too.
+1. Team members (which are all required)
+2. Scrum master(optional)
+3. Product Manager(optional)
+
+obviously the team members are there to take their notes if they wish and help plan sprints and project goals.
+
+The Scrum master although optional if there is tasked with ensuring the daily standup meetings follow the *Agile Cermonies Rules* and they will also manage any distractions. However having a scrum manager at every single daily standup is not a requirement.
+
+If a product manager is invited it is important that they remain a spectator, as they can often turn meetings less transparent, which completely defeats the purpose of the meeting taking place in the first place. So if the product manager is invited they are present as a spectator, otherwise its better they don't attend the meeting atall.
+
+Common problems with Standup meetings are as follows:
+### Misalignment 
+sometimes topics that are unrelated to the the meetings purpose can end up being discussed which in turn can mean there's less time to discuss the actual point of the meeting in the first place, or of course make the meeting go overtime while being filled with pointless information due to its unrelated nature to the project.
+
+### Too Lengthy
+
+Much like misalignment discussing things that are unrelated to the ask and project at hand can mean the meeting becomes to lengthy and begins to waste precious time resources on pointless discussions.
+examples could be 
+- tangential conversations or better known as watercooler talk
+- someone begins rambling and it takes a long time for them to get to the point of their discussion, if they make it to the end of it atall.
+
+### Problem - Solving During the Meeting
+
+Teammates could begin to engauge in problem solving during the meeting, and as much as thats great, its the wrong time and place for it to occur as it can make it difficult to keep the meeting at the scheduled length.
+Which, when you have multiple people scheduling there days to cater for a 10 minute standup meeting can become quite problematic for workflow outside of the meeting.
+
+### Meeting Time/Scheduling
+
+It can become very difficult to schedule a meeting time for when everyone is availble to attend, as there can be many timetable and calendar clashes between teammates which could make the standup meeting quite the chore to schedule in for everyone.
+
+### Not Listening
+
+Standups as much as they mean well can often lean towards teammates tuning out and not listening due to the inability to focus on the questions being asked and talked about.
+It's also common for teammates to be to busy rehersing their questions while another teammate is speaking due to whatever reason (anxiety and the likes) causing them to not be paying attention.
+
+### Skipping Meetings
+
+If the meetings are not the same place/time and follow the same general cadence they can be forgotton about which can cause memebrs to be late meaning they missout on important information, or it could mean they complete miss the meeting, both of which can have significant impacts on the team memmbers work.
+
