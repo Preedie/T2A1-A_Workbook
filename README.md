@@ -65,6 +65,7 @@ The database that ive chosen which is commonly used in API database project is P
 ### Pros:
 
 1. ACID ADHERENCE: Postgres complies with the ACID rules/properties which allows for the data have.
+
 - Atomicity: essentially "it" happens, or nothing at all does. So there's no halfway changes!
 - Consistency: Very straight forward but everything stays the same before, during and after "Consistency is key" as they say.
 - Isolation: Regardless of how many things are happening at once they happen seperately within their scope.
@@ -94,12 +95,15 @@ So depending on the workload the requirements of not only hardware but software 
 Daily stand-ups are one of the many agile management methodolgies implemented when undertaking a API project.
 
 The general structure of a daily stand-up is as follows.
+
 - questions are asked
+
 1. What did you do yesterday?
 2. what will you do today?
 3. Is there anything blocking your progress?
+
 - The standup is usually only for 10 people max as having to many people in the meeting cna make it go alot longer than it should aswell as making the meeting less transparent as team member will begin to lose the motivation to be more questioning and open with a large amoutn of spectators.
-- The standup is often reserved to be a maximum of 10 minutes long.
+- The standup is often reserved to be a maximum of 10-15 minutes long.
 
 The standup meeting is largely structured around the 3 questions what did you do yesterday, what will you do today and is anything blocking your progress. Which not everyone is required to, but notes can be taken as it is considered quite beneficial to do so.
 
@@ -155,4 +159,43 @@ It's also common for teammates to be to busy rehersing their questions while ano
 ### Skipping Meetings
 
 If the meetings are not the same place/time and follow the same general cadence they can be forgotton about which can cause memebrs to be late meaning they missout on important information, or it could mean they complete miss the meeting, both of which can have significant impacts on the team memmbers work.
+
+## Q4
+
+A standard source control process in a API project starts with
+
+1. Repo Setup: 
+Setting up a repository on a cloud storage application system is typically the first process in the creatin of a API project. This will allow team members to work effectively alongside each other.
+
+2. Branching: 
+Working forward from Repo setup is branching, this effectively allows team memmbers to work with the main/master source but not "on" the main source, so a Dev will work alongside the main/master on a branched source to fix bugs, add features etc without effecting the main source code itself, then the "updates" so to speak can be added on or merged into the main/master source code later.
+
+3. API Design Process: 
+In this part of the API projects design process the blueprints along with modules, endpoints, how data and information is requested/responded to aswell as authentication processes and error handling strategies are created. Documentation of how the API is to be designed will also be done here through the use of applications that aid in the creation of blueprints.
+
+4. Feature Development: Within this process the first thing done is a branch is created from the main/master, this allows for code to be edited/changed while keeping the working integrity of the main source true, through isolation using branches. This/these branches will allow developers to work collabratively on features, bug fixes and performance enhancements. Once all is completed the features are implemeneted and enter the review process in which code adherence, quality and code standards are reviewed to ensure there are no potential issues, and if there is they are caught early due to this process.
+
+5. Feedback and Iteration: This is where the API project is adjusted and or improved based off of the feedback that's received until the application meets the requirements set in the scope of the project design and its features.
+
+6. Testing: 
+Throughout the testing phase of the project individual parts of code will be tested in isolation to ensure they function correctly aswell as testing how different code interacts with other code.
+Functional testing will be done to ensure the code does what its supposed to do, or more so was designed too.
+Code will also be tested repetitvely on previously parts of code to ensure any new implementations haven't broken code (known as regression testing). Testing to ensure performance isn't waning is also done testing the software against various conditions to ensure responsiveness.
+Secruity testing is done to identify any possible vulnerabilities, ensuring data protection.
+
+7. Continuous Intergration: 
+Through continuous intergration and implementing it into the management process of the API project  developer teams can ensure the API remains stable, reliable and consistent throughout the projects life. As this process helps foster collaboration aswell as accelerating development and improving overall software quality through automated testing, automatic API building after each code change, deployment automation and creation on a CI that can provide immediate feedback to the developers about the status of their code changes.
+
+8. Documentation: 
+Keeping a well detailed documentation for the API project that includes, endpoint descriptions, request and response schemas examples of different usages and authentication details is another invaluable process as it allows the developers to not only themselves stay up to date with any code changes, but also helps to on board new developers quickly and concisely.
+
+9. Deployment:
+In this stage the API is pushed to the phase of staging and testing and once it's validated and all testing is done it is deployed. Deployment is done through containerization through tools like (docker), or it can be deployed by serverless platforms.
+
+10. Release Management: 
+Throughout this process of the management method developers ensure that the release of the API project is stable and remains so throughout the duration of its deployment and here after.
+Developers will release plan, use a versioning scheme to track changes to the API and will also do rigerous testing throughout the APIs developement process to ensure it meets the standards set.
+
+11. Monitoring/Maintenance:
+Once deployed the API will be consistently tracked in regards to its performance along with responding to feedback with updates and testing to ensure the application stays cutting edge, highly performant and bug free for the best user experience.
 
