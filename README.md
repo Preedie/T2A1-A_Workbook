@@ -199,3 +199,55 @@ Developers will release plan, use a versioning scheme to track changes to the AP
 11. Monitoring/Maintenance:
 Once deployed the API will be consistently tracked in regards to its performance along with responding to feedback with updates and testing to ensure the application stays cutting edge, highly performant and bug free for the best user experience.
 
+## Q5
+
+### API TESTING
+
+API testing is essentially confirming that a particular API is working how it was intended to.
+It is tested various ways by developers in which the developer can manually do the tests or automate tests to happen via the use of an API testing tool.
+there are multiple ways of testing a API and its functionality/performance and they all play a important role in ensuring the API is functional.
+
+### Contract Testing
+
+This type of testing requires the developer to test that the API adheres to the contract or the particular specifications that the API is required to.
+Along with testing that contract testing also ensures that the API adheres and does not break the exisiting functionality.
+Lastly a Developer will check the format of the information/functionality of the API and ensure the API meets/agrees with the requirements of the contract.
+
+### Unit Testing
+
+Through this method of testing the Developer will ensure that certain endpoints within the code return correct responses that have been given to said request. Basically endpoint testing will ensure that any given endpoint will return and handle the request properly and also return the correct message that was created for it by the Developer whether that message be user information to and error message code.
+
+### End-to-end testing
+
+Where unit testing ensure certain endpoints are working independently from each other, end-to-end testing ensures and helps indentify possible integration issues from different components of the system. So it will also ensure that all individual endpoints works however will always ensure that there is is seamless/performative intergration between various parts of the application stack.
+
+### Load Testing
+
+Load testings purpose is to work out how the system/s will perform under a regular load (requests/post etc) and answer a few different questions that may be of importance like.
+
+1. Wil a system be able to handle a certain number of users or requests without crashing or slowing down?
+2. How does the system respond under different load levels (low, med, high).
+3. How doe sthe system grow and handle said growth, are there any types of performance issues or bottle necks?
+
+Doing load testing ensures that the developers can isolate and contain any performance pitfalls or to spot any potential code improvements to allow the application to run smoothly providing a seamless, enjoyable user experience that performs well as it scales to a larger more mature program with more requests and users.
+
+
+## Q6
+
+The three principles of information security and what they are/do are as follows.
+
+### Confidentiality 
+
+The purpose of this principle is to ensure private data is kept private and only accessible by the user it pertains to (who is logged in) it will protect the data through authorization and authentication using encryption and access controls to prevent disclosure or theft of user/s sensitive information.
+
+### Integrity 
+
+integrity ensure that data as its stored is un changed or tampered with through un authorized modification, insertio of data by a un authorized individual aswell as deletion. It does this through the use of chechsums, digitial signatures using encryption methods and access controls all help in ensuring the data maintains its intergity.
+
+### Availability 
+
+Availability ensures that the data/information protected is accessible at all times by the user that is authorized to access it. Essentially this principle is to prevent any type of interruption to the access of the database from outages, server downtime or even access denial. Making sure redundant systems are in place aswell as backup and recovery systems and procedures along with ensuring the network to the database server remains strong and uninterrupted.
+
+By following and implementing these security measures organisations or even solo developers can create a excellent foundation or framework to ensure system/application security for their users, ensuring that data and information stored can be done so safely.
+
+## Q7
