@@ -251,3 +251,19 @@ Availability ensures that the data/information protected is accessible at all ti
 By following and implementing these security measures organisations or even solo developers can create a excellent foundation or framework to ensure system/application security for their users, ensuring that data and information stored can be done so safely.
 
 ## Q7
+
+So if I were to provide an overview of implementing confidentiality into a API project i would:
+
+1. ENCRYPT:
+Making sure all the sensitive data that is stored within the project was properly encrypted using a secure algorithm that secures data transmission and storage through disk/file encryption.
+AES (Advanced Encryptions Standard) uses a symmetric encryption algorithm that is used for doing just that.
+Or alternatively i would use RSA (Rivest-Shamir-Adleman) which is a asymmetric encryption algorithm that is used to do key exchanges and digitla signatures to store sensitive information. This will mean each user will have a public-private ket pair. The public key will be used for encryption and the signature verification whereas the private key will be used to decrypt the signature. 
+
+2. ACCESSS CONTROLS:
+Implementing controls to limit access to the endpoints within an API project through the use of API keys, one example of a API key is JWT tokens for authentication and authorization. These will validate the user and the users permission within the application before granting access to sensitive information.
+
+3. DATA MASKING:
+This is the simple implementation of concealing information returned in a message to the user, for example if there is an email that needs to be shown parts of it can be masked with asterisks or by hashing the data entirely!
+
+4. SECURE STORAGE:
+Ensuring secure storage via encrypting the Data inside and using strong encryption algorithms and key management to maintain data protection for the database/storage system.
