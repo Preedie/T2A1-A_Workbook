@@ -267,3 +267,65 @@ This is the simple implementation of concealing information returned in a messag
 
 4. SECURE STORAGE:
 Ensuring secure storage via encrypting the Data inside and using strong encryption algorithms and key management to maintain data protection for the database/storage system.
+
+## Q8
+
+1. PRIVACY ACT:
+The Privacy act 1988 ensures that the handling of personal information of asutralian government agencies and businesses with a turnover of over 3 million AUD. it sets APPs (Australian Privacy Principles) which controls the use, disclosure, collection and secruity of personal information. Social media developers are required to comply with the Privacy Act and APPs when handling all user data.
+
+2. NOTIFY OF BREACHES TO SECURITY: 
+Under the prvacy act organizations that are covered by the privacy act are required to report any users that may be affected by a possible and eligable security/data breach. This particular act/schema controls and mandates the the timely notification to all required sources when there is a unauthorized breach or access to a user/s personal information, that is likely to harm individuals.
+
+3. SPAM ACT:
+The spam act is in charge of making sure a organization or business is regulated in the sending of commercial electronic messages, this could be emails, SMS, and instant messages through social media. This partocular act will also ensure that the developers have aquired consent prior to to sending the electronic messages aswell as providing a functional unsubscribe feature.
+
+4. TELECOMMUNICATIONS ACT: The telecommunications act regulates the access and collection of telecommunications in Australia as many social media platforms offer messaging services which are required to comply with the acts concerning the interception access and disclosure of the data/information communicated.
+
+5. SURVEILLANCE DEVICES ACT: This particular act regulates the programs access and use of listening devices and tracking devices, in Australia. Social media platforms must ensure that they comply with acts requirements in relations to a individuals communcation and location data.
+
+6. CONSUMER LAW:
+This act regulates and prohibits the use of deceptive and misleading trade practices. Developers must ensure that ther social media application does not mislead users and that the data handling procedures are true to their nature.
+
+7. CHILDRENS ONLINE PROVACY PROTECTION: 
+Australia itself does not have a law specific to COPPA, however social media developers should still protect the personal information of any children user. Although COPPA doesnt directly target child protection and privacy it does still regulate the handling of personal information including children.
+
+## Q9
+
+A structual aspect of a database will include the following.
+
+1. Tables:
+
+- One of the fundamental structures used in all database models.
+- Each table represents its own entity or concept which could be "users", "products.
+- Each table is designed in a row and column form.
+-Columns are referenced to as attributes which define the entity thats being shown.
+- Each of these columns are also data type specific so, Integer/string/date or boolean.
+
+2. Keys:
+
+- Keys allow the developers to create relationsships between different tables.
+- A primarky key is a unique key that identifies said record in a table. This key will ensure there are no duplicate rows.
+- Foreign keys allow the developer to establish relationships between primary keys in a different table.
+- Foreign keys allow for creating relational integrity through linking between related tables.
+
+3. Relationships:
+
+- Relationships dictate how different tables can or are related to each other.
+- Commong types of relationships are one-to-one, one-to-many and many-to-many.
+- In a one to one relationship in a record is related to exactly one record in another table.
+- a one-to-many relationship is a single record in a table that relates to multiple records in another table, however the many records only relate to one record in the first table.
+- in a many-to-many relationship many records in a table can be related to many records in another table, often requiring a joiner table (junction) to represent the relationship.
+
+4. Normalisation:
+
+- Normalization allows datat in a database to be organised to reduce redundancy and dependancy.
+- Normalization is implicity allows the developer to break down large tables into smaller tables to minimise duplication and maintain data integrity.
+- Normalization helps stop any type of data issues and ensures that the data storage is efficient aswell as the retrieval.
+
+5. Contraints:
+
+ - Constraint are rules and conditions that ensure the databases data adheres to the enforced integrity.
+ - Typical contraints invlude, keys, unique contraints and check contraints.
+- Primary keys ensure the records stored in the table are uniquely identified.
+- foreign keys ensure integrity through making sure vaules match primary key vaules in related tables.
+- check contraints ensure data meets a specific condition or expression that has been set before allowing it to be stored into a database.
