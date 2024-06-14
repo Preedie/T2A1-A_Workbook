@@ -329,3 +329,41 @@ A structual aspect of a database will include the following.
 - Primary keys ensure the records stored in the table are uniquely identified.
 - foreign keys ensure integrity through making sure vaules match primary key vaules in related tables.
 - check contraints ensure data meets a specific condition or expression that has been set before allowing it to be stored into a database.
+
+## Q10
+
+Relational Database Models create data integrity through making sure the data and information stored within are accurate and consistent. There are multiple types of data integrity within a relational database model and all of them play a special role in ensuring the data remains valid and reliable. These types of data integrity are referential, entity and domain integrity. Each of these relational database model integrity methods can be enforced through constraints and rules in the relational database management system.
+
+1. ## Entity Integrity 
+
+Entity Integrity makes sure that each table within the database carries a unique identifier for the each of its rows. This is done through the use of primary keys.
+
+Entity Integrity is enforced through the use a Primary Key Contraints, A primary key is a unique identifier for a particular record in a table.
+The Primary Key will ensure that no one record in a table can have the same value.
+
+2. ## Referential Integrity
+
+Referential Integrity is done through ensuring that relationships between tables are consistent specifically it ensures that foreign keys always point to an already existing and valid record within another table.
+
+Foreign keys point to primary keys in other tables which in turn creates a relationship between the tables. The foriegn key contraint ensures that the foreign key column matches a primary key value in a referenced table even if the table is valued null.
+
+3. ## Domain Integrity 
+
+Domain Integrity ensures that all values within a column in a table are defined by valid values which follow a data type, format and range.
+
+The enforcement of domain integrity is done through ensureing each column in a table is assigned a specific data type (Intger, vchar, date etc) RDMS will ensure that all the values in the colmun adhere to the data type specified.
+
+The value constraints used in domain integrity are:
+
+- NOT NULL Contraint:
+This ensures that the column does not contain null values, making sure there is a valid value in the column
+
+- UNIQUE Constraint:
+Unique constraints ensure that all the values in a column or in multiple columns are unqiue across the table, this will prevent duplicate entries.
+
+- CHECK Contraint:
+Makes sure all values in a column meet a specific condition which in turn eforces domain rules at the data level.
+
+- DEFAULT Contraint:
+This constraint employes a default value in a column when there is no value specified, ensuring the column has always has a valid value.
+
