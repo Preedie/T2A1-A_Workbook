@@ -367,3 +367,91 @@ Makes sure all values in a column meet a specific condition which in turn eforce
 - DEFAULT Contraint:
 This constraint employes a default value in a column when there is no value specified, ensuring the column has always has a valid value.
 
+## Q11
+
+The relational database model provides several operations to manipulate data, ensuring efficient and flexible data management. These operations include adding, removing, changing, and retrieving data. Below are the main ways to manipulate data within a relational database:
+
+### Adding Data
+INSERT: The insert command is used to add new rows to a data table.
+- Syntax:
+
+```
+INSERT INTO table_name (column1, column2, column3)
+VALUES (value1, value2, value3);
+```
+### Removing Data 
+DELETE Statement:
+
+- The delete statement allows the user to remove data from rows within the table based on a condition e.g (WHERE)
+
+- Syntax:
+
+```
+DELETE FROM table_name
+WHERE condition;
+```
+
+TRUNCATE Statement: 
+- The TRUNCATE statement will remove all rows from the table, however it will not delete the table itself.
+
+- Syntax:
+
+```
+TRUNCATE TABLE table_name;
+```
+### Changing Data
+
+UPDATE statement:
+
+- The update statement allows the user to "Update" or modify the data that is already stored within the table.
+
+- Syntax
+
+```
+UPDATE table_name
+SET column1 = value1, column2 = value2, 
+WHERE condition;
+```
+
+### Retrieving Data
+
+SELECT Statement: 
+
+- The SELECT statement is used to search for and retrieve data from a single or multiple tables.
+
+- Syntax:
+
+```
+SELECT column1, column2,
+FROM table_name
+WHERE condition;
+```
+### COMPLEX QUERIES:
+
+Along with the afformentioned data manipulation operations there is the ability to use complex queries to combine rows from two or more tables based on the related column, know as a JOIN, aswell as the ability to Aggregate Functions which lets us perform different calculations on a set of values to return a single value. (COUNT, SUM, AVG, MAX, MIN).
+another complex query known as Subqueries, also known as nested queries allows us to embed one query in another query. This enables us to do more complex requests to refine the data retrieval requests these Sub queries can be used in 'SELECT, FROM and WHERE' clauses. Examples of each below.
+
+- JOIN Syntax:
+```
+SELECT table1.column1, table2.column2
+FROM table1
+JOIN table2 ON table1.common_column = table2.common_column;
+```
+
+- AGGREGATE Syntax:
+```
+SELECT COUNT(*)
+FROM table_name
+WHERE condition;
+```
+
+- SUBQUERIES Syntax:
+```
+SELECT column1
+FROM table_name
+WHERE column2 IN (SELECT column2 FROM another_table WHERE condition);
+```
+
+### CONCLUSION
+
+These operations enable comprehensive data manipulation within a relational database model, allowing users to perform CRUD (Create, Read, Update, Delete) operations to manage the data as required. By utilizing these SQL commands, users can efficiently handle and maintain the data integrity and consistency within the database.
