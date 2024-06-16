@@ -455,3 +455,120 @@ WHERE column2 IN (SELECT column2 FROM another_table WHERE condition);
 ### CONCLUSION
 
 These operations enable comprehensive data manipulation within a relational database model, allowing users to perform CRUD (Create, Read, Update, Delete) operations to manage the data as required. By utilizing these SQL commands, users can efficiently handle and maintain the data integrity and consistency within the database.
+
+## Q12 
+
+1Password provides users with award winning design and industry leading security to store passwords in a private, secure and user friendly fashion the tech stack used within this application is as follows.
+
+### Part 1. TECH STACK:
+
+
+1. Programming Languages:
+
+- C++: Is used for core parts of the applications which includes encryption and data storage. C++ is a powerful language that uses data management and memory managment incredibily well, this make C+++ very performant and efficient at data structures aswell as directly accessing hardware.
+
+- Objective-C: Objective-C is used for macOS and ios versions as its a general purpose, object oriented programming language that is a superset of the C programming language and includes all of its capabillities.
+
+- Java/Kotlin: This programming language is used for the android versions of the application. Java runs by a similar syntax as C/C++ which explains the choice to use it for android versions which means ease of learning for developers already familliar with those languages.
+Kotlin is a statically type language that runs on the Java Virutal Machine, it is designed to be concise and reduce boilerplate code significantly. This makes it far more readable and maintainable compared to Java.
+
+2. Frameworks and Libraries:
+
+- Qt: A cross-platform application framework used for building the user interface.
+QT will let developers write code once and then deploy it across multiple desktops, embbedded and mobile platforms without the requirement of rewriting the original code (source code) QT is very modular and provides many modules for library networking, SQL databases, XML parsing, JSON parsing aswell as many others.
+
+- WebKit: Provides web browsing capabilities within the application.
+Webkit has support for rendering HTML and CSS which allows the 1Password to display web content within their UI.
+JavaScript execution is also achievable as webkit includes the JavaScript Engine.
+All in all webkit will integrates into 1Password well to provide a smooth browsing experience.
+
+- Crypto++: A C++ library used for encryption and 
+cryptographic functions. Crypto++ is a cryptographic library that provides the developer with a large suite of crytographic algorithms and functions.
+Crypto++ allows for 1Password to use Encryption Algorithms, Hash functions, Digital signatures and random number generation. 
+
+- SQLCipher: An open-source extension to SQLite used for 
+database encryption.
+SQLCipher uses Database encryption to encrypt and decrypt database files, its uses the AES standards for encryption securing the contents and providing excellent protection for the data/information.
+
+- libsodium: A library for encryption, decryption, signatures, password hashing, etc.
+Libsodium provides encryption, digital signatures, password hashing, secure key generation and is cross platform with Windows, Linux, MacOS and mobile platforms.
+
+3. Operating Systems:
+
+- Windows: A popular OS system developed by microsoft which provides the user with a GUI and the ability to do tasks on their device.
+
+- macOS: A popular OS system developed by Apple Inc for their line of Macintosh computers, providing a simple GUI and the ability to multitask and perform said tasks within said GUI/OS.
+
+- iOS: iOS is Apples mobile device operating system that provides a sleek GUI for users to interact and complete/do tasks within.
+
+- Android: Android developed by Google provides a Operating system for Android devices which also provides a sleek GUI for the user to interact and complete/do tasks within.
+
+- Web: Web is a Linux operating system developed by Palm, its GUI is entended to be simple and sleek while also implements the use of gesture-based navigation.
+
+4. Other Tech:
+
+- Git: A control system for managing source code so that teams can collabrate remotely through the use of git pulls/push/clones etc.
+
+- JIRA: Issue and project tracking software for teams.
+JIRA will allow the management of tasks bugs through agile project management. it will allow the tracking of the progress/collaboration among teams and helps in planning/tracking the projects sprints.
+
+- Jenkins: Used for continuous integration and continuous deployment (CI/CD).
+jenkins allows for the automation of deployment phases aswell as testing and building. It also ingrates with many different version control and testing tools.
+
+- AWS (Amazon Web Services): Used for hosting and managing infrastructure for cloud-based services.
+AWS is a large secure cloud storage infrastructure that allows the stoarge of databases, analytics, applications and deployment services.
+
+- Fastlane: Automates beta deployments and releases for mobile apps.
+Fastlane streamlines the building and deployment proccesses for iOS and android apps. It will automate the signing, building, testing and deployment aspects of apps to app stores.
+
+5. Development Tools:
+
+- Xcode: This is used as a intergrated development enviroment for macOS and iOS versions of the application.
+
+- Android Studio: This is a intergrated development enviroment used for developing the application on Android.
+
+- Visual Studio: Visual studio is a intergrated development enviroment used for developing the application on a Windows Version.
+
+- QT Creator: This is a intergrated development enviroment that is used for/with the QT framework.
+
+6. Encryption and Security:
+
+- 1Password is heavily reliant on strong encryption, it uses strong encryption standards such as the AES-256 for encrypting user data while its in transit aswell as when its resting.
+
+- Key gathering functions like PBKDF2, bcrypt and scrypt are used to hash a users password, adding another layer of security.
+
+- Secure Number Generation is done though ising the OS provided APIs once again adding another layer of security through generation of highly secure passwords.
+
+### Part 2. HARDWARE USED:
+
+As the hardware is not listed by 1Password my educated guesses are:
+
+1. Servers: 
+These would have highly powerful CPUs, often 2 CPUs are utilized in servers to combat storage performance issues aswell as increase the core and hyper/multi threaded cores for better performance in computing tasks.
+These servers would likely have large amounts of RAM aswell, upwards of 128gbs and un suprisingly 1TB to once again increase performance and effciency due to the large amounts of tasks and stress the servers would be under.
+
+2. Storage: 
+The main method of storage for 1Password is cloud storage through AWS, however there is likely a database storage infrastructure in place that comprimises of SSDs and HDDs although HDDs are less likely due to their slow nature, but may still be used in a static data storage format (think record keeping rather than data reading and writing) but with if the company isnt cutting costs for large static storage it is mroe likely that SSDs are used in place of HDDs, if at all.
+
+3. Networking:
+A number of routers and switches would be used to ensure minimal downtime if any.
+Load balancers would be used to correctly distribute "load" or incoming traffic to multiple servers rather than overloading one server causing crashes, or performance issues.
+
+4. Security: 
+Physical Firewall devices that meet an enterprise grade are likely used for security and filtering of the networks traffic.
+IDS/IPS applicances (Intrusion detection/Prevention) hardware would be used to monitor the network traffic allow the detection and prevention of potential security breaches.
+
+5. Encryption Hardware:
+
+Hardware Security Modules (HSMs) are dedicated pieces of hardware that are used to manage the encryption keys aswell as perform cryptographic operations in a secure fashion.
+
+6. Backup Recovery:
+
+Backup servers are most probable with 1Password, they would store the backup information of users.
+With that is could be possible that there is a secondary data center that stores the information for recovery in case of catastrophic disaster and data loss.
+
+7. Monitoring and Management:
+
+Monitoring hardware to ensure the health and performance of servers and all hardware related to the application/infrastructure.
+
+Although there is alot of hardware used within 1Password it seems that it is far more likely that anything that can reduce hardware usage via software and cloud storage systems is being implemented, however if this is my educated guess (in areas unknown) to what 1Password uses hardware wise.
