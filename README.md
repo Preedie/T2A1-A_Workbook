@@ -572,3 +572,35 @@ With that is could be possible that there is a secondary data center that stores
 Monitoring hardware to ensure the health and performance of servers and all hardware related to the application/infrastructure.
 
 Although there is alot of hardware used within 1Password it seems that it is far more likely that anything that can reduce hardware usage via software and cloud storage systems is being implemented, however if this is my educated guess (in areas unknown) to what 1Password uses hardware wise.
+
+## Part 3. Technologies:
+
+Due to 1Password beign a password generation and storage application it would use a various amount of technologies to display, create, read, update and delete the data/information given to it by users. 
+
+1. Encryption:
+1Password is known to use AES-256 encryption to protect the data of the users. This particular type of technology is widely recognised encryptioon standard that is strong and ensures your information remains secure.
+
+2. Syncing and Cloud Storage:
+1Password uses many different types of cloud storages to sync the encrypted data vaults across multiple devices. This allows the use to access their passwords from any device they're using with ease.
+1Password also uses end-to-end encryption which essentially means you have access to your sensitive information and only your information.
+
+3. Multi-Factor Authentication (MFA):
+1Password encorporates MDA to add another layer of protection for their users. The MFA process can be done via many different applications but not limited to Google Authenticator or Authy.
+
+4. Cross-Platform Compatibility:
+1Password supports its use over multiple types of Operating platforms (Windows, macOS, iOS, Android aswell as web browsers) This is done through the use of development frameworks/processes and APIs specific to the platform.
+ 
+5. Password Generation:
+1Password can generate passwords for the users that are complex, strong and completely RNG removing the need for personal passwords. This will ensure any attackers are unable to "guess" the users password.
+
+6. User Interface and Experience:
+1Password has a sleek and seamless user experience across many different interfaces (desktop, browsers, mobile apps) which is done though userface frameworks which follow a design and pattern similar to each other for the user over said appication accesses.
+
+7. APIs and Intergrations:
+1Password uses APIs that allow the developer to properly integrate the applications functionality into other applications. Features such as accessing passwords, managing vaults and performing other actions are all features of the intergration.
+
+8. Secruity Practices: 
+1Password follows the best practices when it comes to security. This includes audits, bug fixing programs and complying with standards such as GDPR (General Data Protection Regulation) and SOC 2 (System and Organization Controls 2).
+
+
+
