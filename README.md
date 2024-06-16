@@ -702,3 +702,7 @@ Aswell as using Audit lofs to track how the data has been accessed and any chang
 - Users to TeamMemberships One to many (A single User can belong to multiple teams)
 - TeamMemberships to Teams - Many to one (A single membership links to only one team)
 - TeamMemberships to user - Many to one (A single membership belongs to only one User) 
+
+## Part 7. 1Password ERD Diagram.
+
+![ERD Diagram](./1Password%20ERD.drawio.png)
