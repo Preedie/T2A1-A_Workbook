@@ -465,6 +465,8 @@ These operations enable comprehensive data manipulation within a relational data
 
 1. Programming Languages:
 
+
+
 - C++: Is used for core parts of the applications which includes encryption and data storage. C++ is a powerful language that uses data management and memory managment incredibily well, this make C+++ very performant and efficient at data structures aswell as directly accessing hardware.
 
 - Objective-C: Objective-C is used for macOS and ios versions as its a general purpose, object oriented programming language that is a superset of the C programming language and includes all of its capabillities.
@@ -473,6 +475,8 @@ These operations enable comprehensive data manipulation within a relational data
 Kotlin is a statically type language that runs on the Java Virutal Machine, it is designed to be concise and reduce boilerplate code significantly. This makes it far more readable and maintainable compared to Java.
 
 2. Frameworks and Libraries:
+
+- SQLite: SQLite is a software library that rpovides a relational database management system for 1Password. It provides local embedded database capabilities aswell as a structured query language for query and managing the database.
 
 - Qt: A cross-platform application framework used for building the user interface.
 QT will let developers write code once and then deploy it across multiple desktops, embbedded and mobile platforms without the requirement of rewriting the original code (source code) QT is very modular and provides many modules for library networking, SQL databases, XML parsing, JSON parsing aswell as many others.
@@ -602,5 +606,99 @@ Due to 1Password beign a password generation and storage application it would us
 8. Secruity Practices: 
 1Password follows the best practices when it comes to security. This includes audits, bug fixing programs and complying with standards such as GDPR (General Data Protection Regulation) and SOC 2 (System and Organization Controls 2).
 
+## Part 4. Data Structure in 1Password:
+
+1. Vaults:
+Vaults are used as the primary storage container within 1Paswword. Each vault can hold multiple items which consist of passwords, notes, credit card information and other sensitive information. Some items will have a defined structure dependant on their type, for example different vaults for personal or work related information.
+
+2. Items:
+Within each of the "vaults" are items and each item can represent a certain type of data be it login information, secure notes or a bank account. These items all have a predefined structure which is based off of their type, for example
+
+- Login items will typically include a username and password, URL and additional notes.
+- Secure Notes on the other hand contain a large field for text for storing any type of sensitive data that the user may want to.
+
+3. Fields:
+
+Each item will contain various "fields" to which each field stores a piece of data that can include data such as:
+
+- Text allowing for usernames, passwords or notes.
+- Fields for data that may have an expiration date.
+- A field for attaching different documents or images.
+
+4. Metadata:
+
+Each of the items within the fields in the vaults have metdata. Metadata includes:
+- Timestamps of creation and modification.
+- UUIDs which are unique identifiers for each item and field
+- Versioning which supports information about any changes and revisions to features like item history for example.
+
+5. Encryption:
+
+1Password as previously observed implements end to end encryption for data security.
+
+This is achieved through encryption keys, these keys are derived from the users master password and other cryptographic elements.
+It also ensures that data is not only encrypted while its being transferred but also while it sits in static form waiting for transferal.
+
+6. Syncing and Backup:
+
+Information stored by the user in 1Password is not only syned to the AWS cloud but it is also sycned to the local device, which will allow for a backup copy to be stored in case of catastrophic failure or for the use of the applications features offline.
+
+7. Sharing and Permissions:
+
+1Password has the ability to share vaults with others. This can be done through the changing and allowing of certain permissions changing control access levels for others.
+
+- Read-Only or Full Access: 1Password allows for read only or a Full Access permissions for multiple users. This will give the people a vault is shared with either Read access only or the same permissions as the admin/owner of the vault.
+
+8. Database Structure:
+
+The main underlying structure for 1Password is a mixture of relational and non relational database management, this allows the application to handle differet types of information effciently.
+
+- SQL is used to structure data in relationships and querying 
+- NoSQL is used for a more flexible ane salable storage of non structured or semi structured data.
+
+9. Data Integrity:
+
+1Password incorporates checksums and hashes to properly detect if any data has been corrupted.
+Aswell as using Audit lofs to track how the data has been accessed and any changes to said data.
+
+## Part 5. 1Password Entities and Tables:
+
+1. Vaults: 
+
+- Each user in 1Password can have multiple vaults, which collect items and store them.
+- These vaults can be shared among others, be they users or team members.
+
+2. Items/Entries:
+
+-Items are seperate and individual entries stored within a vault.
+- The different types of items can be login details, credit card information, notes, identities, passwords and bank account information to list a few.
 
 
+3. Fields:
+
+- fields are individual pieces of information that is stored within a item/
+- Examples of fields are usernames, passwords, credit card numbers etc.
+
+4. Users:
+
+- Here information about the user who has access to specific vaults.
+- This will include usernames, passwords and roles set by the main user.
+
+5. Teams/Members:
+
+- This will allow for the organisation for managing multiple users, popular for team or business enviroments where multiple people are required to access the same information easily.
+- This is done through user permissions and the access control granted.
+
+6. History:
+
+- This will track any changes to the items, which will allow the user to view or even go back to a previous version of an entry.
+
+## Part 6. Relationships Between Entities/Tables:
+
+- Users to Vaults - One to many (A single user can have multiple vaults)
+- Vaults to Items - One to many(A single vault can have multiple items)
+- Items to ItemHistory - One to many (A single item can have multiple histories)
+- Teams to TeamMemberships - One to many (A single team can have multiple memberships)
+- Users to TeamMemberships One to many (A single User can belong to multiple teams)
+- TeamMemberships to Teams - Many to one (A single membership links to only one team)
+- TeamMemberships to user - Many to one (A single membership belongs to only one User) 
